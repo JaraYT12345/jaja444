@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #004d99; /* Azul oscuro */
+    padding: 20px 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.logo img {
+    width: 60px; /* Ajusta el tamaño del logo aquí */
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul li {
+    margin-left: 20px;
+}
+
+ul li a {
+    color: #b3e0ff; /* Celeste claro */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+ul li a:hover {
+    background-color: #0066cc; /* Azul medio */
+    color: #fff;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #004d99; /* Azul oscuro */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #003366; /* Azul más oscuro */
+}
+
+
+
+
+
+
+
+
+
+
+.product {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.product-image {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.product-info h3 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+.product-info p {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #555;
+}
+
+hr {
+    border: 0;
+    border-top: 6px solid #000000;
+    margin: 20px 0;
+}
+
+
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.footer-text {
+    font-size: 0.9rem;
+    margin: 0;
+}

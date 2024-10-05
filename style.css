@@ -1,0 +1,384 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #004d99; /* Azul oscuro */
+    padding: 20px 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.logo img {
+    width: 60px; /* Ajusta el tamaño del logo aquí */
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul li {
+    margin-left: 20px;
+}
+
+ul li a {
+    color: #b3e0ff; /* Celeste claro */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+ul li a:hover {
+    background-color: #0066cc; /* Azul medio */
+    color: #fff;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #004d99; /* Azul oscuro */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #003366; /* Azul más oscuro */
+}
+
+
+
+
+
+
+.titulo{
+  text-align: center;
+  
+}
+
+
+
+
+
+
+.info-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    max-width: 1200px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-image {
+    width: 50%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.info-text {
+    width: 50%;
+}
+
+.info-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.info-text p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .info-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 80%;
+    }
+
+    .info-text {
+        width: 80%;
+    }
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 40px 20px;
+}
+
+.card {
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden; /* Oculta el desbordamiento de la imagen */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-img {
+    width: 100%; /* Imagen cubre el ancho de la carta */
+    height: 200px; /* Ajusta la altura según tus necesidades */
+    object-fit: cover; /* Ajusta la imagen para cubrir el área sin distorsión */
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #333;
+    padding: 0 10px 20px;
+}
+
+/* Efecto al pasar el cursor */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+.separator {
+    height: 2px; /* Altura de la línea */
+    background-color: #333; /* Color de la línea */
+    margin: 3px 0; /* Espacio arriba y abajo de la línea */
+}
+
+
+
+.carousel {
+    position: relative;
+    width: 55%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.carousel-slide img {
+    width: 100%;
+    display: block;
+}
+
+.message {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo para la sección de imagen de fondo */
+.hero-section {
+    height: 60vh; /* Altura completa de la ventana del navegador */
+    background-image: url('img/pepe.jpeg'); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover; /* Ajusta la imagen para que cubra toda el área */
+    background-position: center; /* Centra la imagen en la ventana */
+    display: flex;
+    align-items: center; /* Centra el contenido verticalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    color: white;
+    text-align: center;
+}
+
+/* Estilo para el contenido dentro de la sección de imagen */
+.hero-content h1 {
+    font-size: 3rem; /* Tamaño del texto */
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007bff; /* Color del botón */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Color del botón al pasar el cursor */
+    transform: scale(1.05); /* Efecto de escala al pasar el cursor */
+}
+
+/* Estilo para la sección de más información */
+.info-section {
+    padding: 40px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.info-section p {
+    font-size: 1.25rem;
+    color: #333;
+}
+
+
+.titulo{
+ 
+    color: #000000;
+}
+
+
+
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.footer-text {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
